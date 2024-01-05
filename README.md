@@ -1,6 +1,6 @@
-# Reports
+# Barbecue Lighters
 
-Various reports for the multitude of labs I had to endure through.
+Various reports for the multitude of labs I had to endure through. All they're good for now is to light a barbecue.
 
 ## Contributing
 
