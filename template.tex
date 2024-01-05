@@ -1,0 +1,76 @@
+% I live in Europe/Germany, scrtartcl is supposedly for european typography?
+\documentclass[12pt,a4paper]{scrartcl}
+
+% Bibtex setup {{{
+\usepackage[utf8]{inputenc}
+\usepackage{csquotes}
+\usepackage[
+  backend=biber,
+  language=ngerman,
+  style=chem-acs,
+  bibstyle=chem-acs,
+]{biblatex}
+\addbibresource{sources.bib}
+\DeclareFieldFormat{date}{\bfseries{#1}}
+% }}}
+
+% Packages, general {{{
+\usepackage[ngerman]{babel}
+\usepackage{siunitx}
+\usepackage{setspace}
+\usepackage{hyperref}
+% }}}
+
+% Packages, chemistry {{{
+\usepackage{upgreek}
+\usepackage{chemformula}
+\usepackage{chemobabel}
+\usepackage{chemfig}
+\usepackage[formula={chemformula}]{chemmacros}
+% }}}
+
+% Document setup {{{
+\onehalfspacing
+\parindent0pt
+\parskip6pt
+% }}}
+
+\begin{document} % {{{
+\pagenumbering{gobble}
+\begin{titlepage} % {{{
+  \vspace*{6cm}
+  \begin{center} % {{{
+    \Large{\textbf{Anorganisch-Chemisches Praktikum}} \\
+    \vspace*{1cm}
+    \Large{Protokoll zur Darstellung von} \\
+    \vspace*{1cm}
+    \large{\textbf{VERBINDUNG} \ch{FORMEL}} \\
+  \end{center} % }}}
+  \vspace*{5cm}
+  Name: Luca Zeuch \\
+  Datum: \today \\
+  Matrikelnummer: XXXXXX \\
+\end{titlepage} % }}}
+
+\pagenumbering{arabic}
+
+\section{Einleitung} % {{{
+% }}}
+
+\section{Ergebnisse und Diskussion} % {{{
+% }}}
+
+\section{Experimenteller Teil} % {{{
+% }}}
+
+\section{Zusammenfassung} % {{{
+% }}}
+
+\section{Zusatzfragen} % {{{
+% }}}
+
+\newpage
+\printbibliography
+\end{document} % }}}
+
+% vim:foldmethod=marker
