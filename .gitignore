@@ -1,0 +1,19 @@
+# LaTeX build files, we don't want to track those.
+*.aux
+*.log
+*.out
+*.toc
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.synctex.gz
+*.bcf
+*.xml
+chemobabelimgdir/
+
+# Also don't track the PDFs.
+*.pdf
+
+# Apple nonsense
+.DS_Store
