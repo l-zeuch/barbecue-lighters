@@ -13,8 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: superbrothers/close-pull-request@v3
-        # TODO: disabled for testing, will enable once I confirmed it working
-        # if: ${{ github.actor != github.repository_owner }}
+        if: ${{ github.actor != github.repository_owner }}
         with:
           comment: |-
             Hi @${{ github.actor }}!
