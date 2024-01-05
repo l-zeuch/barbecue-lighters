@@ -1,0 +1,29 @@
+---
+name: Close PRs
+
+on:
+  pull_request_target:
+    types:
+      - opened
+    paths:
+      - '**.tex'
+
+jobs:
+  comment-and-close-pr:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: superbrothers/close-pull-request@v3
+        # TODO: disabled for testing, will enable once I confirmed it working
+        # if: ${{ github.actor != github.repository_owner }}
+        with:
+          comment: |-
+            Hi @${{ github.actor }}!
+
+            Please re-read the Contributing section in the README.
+
+            I do not accept pull requests for this repository. Until GitHub adds a
+            setting to disable them, I unfortunately have to resort to automatically
+            closing and commenting on them.
+
+            Maybe use your time to contribute to some other project instead? I'm
+            sure you can pick one from one of these: https://github.com/trending
